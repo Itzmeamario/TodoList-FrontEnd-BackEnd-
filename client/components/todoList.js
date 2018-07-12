@@ -6,7 +6,7 @@ angular.module('app')
     delete: '<'
   },
 
-  controller: function($scope) {
+  /*controller: function($scope) {
     $scope.data=[
       {Name: 'Prakash',Age: 26, Number: 9800775544},
       {Name: 'Sushil',Age: 27, Number: 9800774433},
@@ -14,7 +14,7 @@ angular.module('app')
       ];
       
       $scope.gridOptions = { data: 'data' };
-  },
+  },*/
 
   template:`
   <div>
@@ -23,8 +23,6 @@ angular.module('app')
     <button ng-click="$ctrl.delete($index)">&#10004</button>
     Todo:{{todo}}, Responsible:{{$ctrl.responsibles[$index]}}
     </div>
-    
   </div>
-  <div class="gridStyle" ng-grid="gridOptions"></div>
   `
 });
